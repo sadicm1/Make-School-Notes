@@ -41,7 +41,7 @@ class RealmHelper {
   static func retrieveNotes() -> Results<Note> {
     // retrive all notes from default Realm
     let realm = try! Realm()
-    return realm.objects(Note.self).sorted(byProperty: "modificationTime", ascending: false)
+    return realm.objects(Note.self).sorted(byProperty: "modificationTime", ascending: true)
   }
   
 }
