@@ -44,6 +44,9 @@ class ListNotesTableViewController: UITableViewController {
     // 4
     cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()
     
+    // 5
+    cell.contentOverviewLabel.text = note.content
+    
     return cell
   }
   
