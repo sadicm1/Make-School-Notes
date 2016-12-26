@@ -49,8 +49,8 @@
 		2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 		2E4A07AE1C42F539007F415F /* NSDate+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+convertToString.swift"; sourceTree = "<group>"; };
 		2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
-		7E3FD8091E119C87006C2E0C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
-		7E3FD80D1E119C94006C2E0C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		7E3FD8091E119C87006C2E0C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../RealmSwift.framework; sourceTree = "<group>"; };
+		7E3FD80D1E119C94006C2E0C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Realm.framework; sourceTree = "<group>"; };
 		7E423F411E10611000D40022 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		7E703B7A1E0C5FA8009E35DF /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,8 +71,6 @@
 		2E4A07871C42F3B0007F415F = {
 			isa = PBXGroup;
 			children = (
-				7E3FD80D1E119C94006C2E0C /* Realm.framework */,
-				7E3FD8091E119C87006C2E0C /* RealmSwift.framework */,
 				2E4A07B21C42F8A8007F415F /* Frameworks */,
 				2E4A07921C42F3B0007F415F /* MakeSchoolNotes */,
 				2E4A07911C42F3B0007F415F /* Products */,
@@ -148,6 +146,8 @@
 		2E4A07B21C42F8A8007F415F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E3FD80D1E119C94006C2E0C /* Realm.framework */,
+				7E3FD8091E119C87006C2E0C /* RealmSwift.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";

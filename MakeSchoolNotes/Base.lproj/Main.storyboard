@@ -17,31 +17,43 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="HJp-ZC-yAU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="listNotesTableViewCell" rowHeight="60" id="e5G-wG-mNh" customClass="ListNotesTableViewCell" customModule="MakeSchoolNotes" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e5G-wG-mNh" id="Du3-q9-QAa">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note Modification Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-i9-Dq5">
-                                            <rect key="frame" x="8" y="30" width="196" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" red="0.40392156862745099" green="0.396078431372549" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sj0-eY-Oba">
-                                            <rect key="frame" x="8" y="8" width="122" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <color key="textColor" red="0.32549019607843138" green="0.6588235294117647" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ePd-RY-GkB">
+                                            <rect key="frame" x="8" y="8" width="359" height="44"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Note Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sj0-eY-Oba">
+                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.32549019607843138" green="0.6588235294117647" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Modification Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-i9-Dq5">
+                                                    <rect key="frame" x="0.0" y="26.5" width="359" height="17.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.40392156862745099" green="0.396078431372549" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </stackView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.97200478976795679" green="0.9732262171464523" blue="0.95189092323444802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="ePd-RY-GkB" secondAttribute="leading" id="6SR-ZO-y2w"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ePd-RY-GkB" secondAttribute="bottom" id="7v1-ei-c44"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ePd-RY-GkB" secondAttribute="trailing" id="86Z-Zs-HR1"/>
+                                        <constraint firstItem="ePd-RY-GkB" firstAttribute="top" secondItem="Du3-q9-QAa" secondAttribute="topMargin" id="vgq-I9-HC8"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="noteModificationTimeLabel" destination="gZ0-i9-Dq5" id="TSj-Aq-pds"/>
                                     <outlet property="noteTitleLabel" destination="Sj0-eY-Oba" id="N2h-T2-cbL"/>
@@ -55,7 +67,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Notes" id="NEy-Lz-EWq">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="92Q-il-HmB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="92Q-il-HmB">
                             <connections>
                                 <segue destination="hwL-Pj-zhD" kind="show" identifier="addNote" id="HGc-aj-lpw"/>
                             </connections>
@@ -78,28 +90,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYi-NV-KkQ">
-                                <rect key="frame" x="20" y="72" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dgd-cq-ALT">
-                                <rect key="frame" x="20" y="110" width="560" height="128"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ps9-Up-Mbv">
+                                <rect key="frame" x="16" y="72" width="343" height="587"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYi-NV-KkQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <color key="backgroundColor" red="0.99593764543533325" green="1" blue="0.97541683912277222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dgd-cq-ALT">
+                                        <rect key="frame" x="0.0" y="40" width="343" height="547"/>
+                                        <color key="backgroundColor" red="0.99593764543533325" green="1" blue="0.97541683912277222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.96947365999221802" blue="0.91494995355606079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93845177664974622" green="0.93194603532537756" blue="0.91242881135227172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="OYi-NV-KkQ" secondAttribute="trailing" id="0aW-ic-3Ma"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="OYi-NV-KkQ" secondAttribute="leading" id="3G1-vd-jVi"/>
-                            <constraint firstItem="sgN-si-MYY" firstAttribute="top" secondItem="Dgd-cq-ALT" secondAttribute="bottom" constant="362" id="Imq-Ps-R8U"/>
-                            <constraint firstItem="Dgd-cq-ALT" firstAttribute="leading" secondItem="OYi-NV-KkQ" secondAttribute="leading" id="NWK-fJ-5x9"/>
-                            <constraint firstItem="OYi-NV-KkQ" firstAttribute="top" secondItem="aPh-ep-aXb" secondAttribute="bottom" constant="8" symbolic="YES" id="fhc-Pt-QrA"/>
-                            <constraint firstItem="Dgd-cq-ALT" firstAttribute="top" secondItem="OYi-NV-KkQ" secondAttribute="bottom" constant="8" symbolic="YES" id="gvz-B7-BX7"/>
-                            <constraint firstItem="Dgd-cq-ALT" firstAttribute="trailing" secondItem="OYi-NV-KkQ" secondAttribute="trailing" id="mLr-35-DC3"/>
+                            <constraint firstItem="ps9-Up-Mbv" firstAttribute="top" secondItem="aPh-ep-aXb" secondAttribute="bottom" constant="8" symbolic="YES" id="0Wr-Q3-m7I"/>
+                            <constraint firstItem="ps9-Up-Mbv" firstAttribute="trailing" secondItem="Nqc-vg-0Qk" secondAttribute="trailingMargin" id="GPc-he-Zzb"/>
+                            <constraint firstItem="ps9-Up-Mbv" firstAttribute="leading" secondItem="Nqc-vg-0Qk" secondAttribute="leadingMargin" id="N2d-I9-EpE"/>
+                            <constraint firstItem="sgN-si-MYY" firstAttribute="top" secondItem="ps9-Up-Mbv" secondAttribute="bottom" constant="8" symbolic="YES" id="iZw-aM-dPb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="xFO-8k-r0K">
@@ -122,7 +138,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKb-8x-9fe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Pq2-d7-Zcl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1653" y="214"/>
+            <point key="canvasLocation" x="1652" y="213.64317841079463"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D4Z-D9-mHF">
