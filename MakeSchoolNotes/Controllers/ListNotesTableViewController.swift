@@ -25,12 +25,12 @@ class ListNotesTableViewController: UITableViewController {
   
   // MARK: UITableViewDataSoource
   
-  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return notes.count
   }
   
-  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("listNotesTableViewCell", forIndexPath: indexPath) as! ListNotesTableViewCell
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! ListNotesTableViewCell
     
     // 1
     let row = indexPath.row
@@ -48,17 +48,17 @@ class ListNotesTableViewController: UITableViewController {
   }
   
   // Display delete option when user swipes right
-  override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+  override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
     // Check the delete mode for editingStyle
-    if editingStyle == .Delete {
+    if editingStyle == .delete {
       // delete the note form Realm
-      RealmHelper.deleteNote(notes[indexPath.row])
+      RealmHelper.delete(notes[indexPath.row])
       // update notes array by reflecting changes
       notes = RealmHelper.retrieveNotes()
     }
   }
   
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     // 1: Store segue's identifier into a local variable called identifier
     if let identifier = segue.identifier {
       // check if displayNote segue is triggered
@@ -71,7 +71,7 @@ class ListNotesTableViewController: UITableViewController {
         // define a local constant to store the row we selected.
         let note = notes[indexPath.row]
         // define a local constant to store an instance of DislayNoteViewController
-        let displayNoteViewController = segue.destinationViewController as! DisplayNoteViewController
+        let displayNoteViewController = segue.destination as! DisplayNoteViewController
         // set note property of displayNoteViewController to our selected note
         displayNoteViewController.note = note
         
@@ -82,7 +82,7 @@ class ListNotesTableViewController: UITableViewController {
     }
   }
   
-  @IBAction func unwindToListNotesTableViewController(segue: UIStoryboardSegue) {
+  @IBAction func unwindToListNotesTableViewController(_ segue: UIStoryboardSegue) {
     
   }
   

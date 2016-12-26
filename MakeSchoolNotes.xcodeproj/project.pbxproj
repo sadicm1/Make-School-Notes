@@ -15,23 +15,23 @@
 		2E4A07AB1C42F497007F415F /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */; };
 		2E4A07AF1C42F539007F415F /* NSDate+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07AE1C42F539007F415F /* NSDate+convertToString.swift */; };
 		2E4A07B11C42F599007F415F /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */; };
-		65BF36601D07D9D800CB1BB3 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF365E1D07D9D800CB1BB3 /* Realm.framework */; };
-		65BF36611D07D9D800CB1BB3 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF365E1D07D9D800CB1BB3 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		65BF36621D07D9D800CB1BB3 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF365F1D07D9D800CB1BB3 /* RealmSwift.framework */; };
-		65BF36631D07D9D800CB1BB3 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF365F1D07D9D800CB1BB3 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E3FD80A1E119C87006C2E0C /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FD8091E119C87006C2E0C /* RealmSwift.framework */; };
+		7E3FD80B1E119C87006C2E0C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FD8091E119C87006C2E0C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E3FD80E1E119C94006C2E0C /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FD80D1E119C94006C2E0C /* Realm.framework */; };
+		7E3FD80F1E119C94006C2E0C /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3FD80D1E119C94006C2E0C /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7E423F421E10611000D40022 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E423F411E10611000D40022 /* RealmHelper.swift */; };
 		7E703B7B1E0C5FA8009E35DF /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E703B7A1E0C5FA8009E35DF /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2E4A07BB1C42F8B5007F415F /* Embed Frameworks */ = {
+		7E3FD80C1E119C87006C2E0C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				65BF36631D07D9D800CB1BB3 /* RealmSwift.framework in Embed Frameworks */,
-				65BF36611D07D9D800CB1BB3 /* Realm.framework in Embed Frameworks */,
+				7E3FD80F1E119C94006C2E0C /* Realm.framework in Embed Frameworks */,
+				7E3FD80B1E119C87006C2E0C /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,8 +49,8 @@
 		2E4A07AA1C42F497007F415F /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 		2E4A07AE1C42F539007F415F /* NSDate+convertToString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+convertToString.swift"; sourceTree = "<group>"; };
 		2E4A07B01C42F599007F415F /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
-		65BF365E1D07D9D800CB1BB3 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		65BF365F1D07D9D800CB1BB3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		7E3FD8091E119C87006C2E0C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		7E3FD80D1E119C94006C2E0C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		7E423F411E10611000D40022 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		7E703B7A1E0C5FA8009E35DF /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BF36621D07D9D800CB1BB3 /* RealmSwift.framework in Frameworks */,
-				65BF36601D07D9D800CB1BB3 /* Realm.framework in Frameworks */,
+				7E3FD80E1E119C94006C2E0C /* Realm.framework in Frameworks */,
+				7E3FD80A1E119C87006C2E0C /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +71,8 @@
 		2E4A07871C42F3B0007F415F = {
 			isa = PBXGroup;
 			children = (
+				7E3FD80D1E119C94006C2E0C /* Realm.framework */,
+				7E3FD8091E119C87006C2E0C /* RealmSwift.framework */,
 				2E4A07B21C42F8A8007F415F /* Frameworks */,
 				2E4A07921C42F3B0007F415F /* MakeSchoolNotes */,
 				2E4A07911C42F3B0007F415F /* Products */,
@@ -146,8 +148,6 @@
 		2E4A07B21C42F8A8007F415F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65BF365E1D07D9D800CB1BB3 /* Realm.framework */,
-				65BF365F1D07D9D800CB1BB3 /* RealmSwift.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 				2E4A078C1C42F3B0007F415F /* Sources */,
 				2E4A078D1C42F3B0007F415F /* Frameworks */,
 				2E4A078E1C42F3B0007F415F /* Resources */,
-				2E4A07BB1C42F8B5007F415F /* Embed Frameworks */,
+				7E3FD80C1E119C87006C2E0C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,12 +180,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = MakeSchool;
 				TargetAttributes = {
 					2E4A078F1C42F3B0007F415F = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = CR7H5END6Y;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -270,8 +272,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -293,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -315,8 +319,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -332,9 +338,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -345,6 +352,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CR7H5END6Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -352,8 +361,9 @@
 				);
 				INFOPLIST_FILE = MakeSchoolNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MakeSchoolNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsadic.MakeSchoolNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -362,6 +372,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CR7H5END6Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -369,8 +381,9 @@
 				);
 				INFOPLIST_FILE = MakeSchoolNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.MakeSchoolNotes;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehmetsadic.MakeSchoolNotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

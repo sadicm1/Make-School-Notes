@@ -12,7 +12,7 @@ import RealmSwift
 class RealmHelper {
   // static methods will go to here
   
-  static func addNote(note: Note) {
+  static func add(_ note: Note) {
     // save a note to default Realm
     let realm = try! Realm()
     try! realm.write() {
@@ -20,7 +20,7 @@ class RealmHelper {
     }
   }
   
-  static func deleteNote(note: Note) {
+  static func delete(_ note: Note) {
     // delete a note from default Realm
     let realm = try! Realm()
     try! realm.write() {
@@ -28,20 +28,20 @@ class RealmHelper {
     }
   }
   
-  static func updateNote(noteToBeUpdated: Note, newNote: Note) {
+  static func update(_ note: Note, with newNote: Note) {
     // update an existing note which is in default Realm with a new note
     let realm = try! Realm()
     try! realm.write() {
-      noteToBeUpdated.title = newNote.title
-      noteToBeUpdated.content = newNote.content
-      noteToBeUpdated.modificationTime = newNote.modificationTime
+      note.title = newNote.title
+      note.content = newNote.content
+      note.modificationTime = newNote.modificationTime
     }
   }
   
   static func retrieveNotes() -> Results<Note> {
     // retrive all notes from default Realm
     let realm = try! Realm()
-    return realm.objects(Note).sorted("modificationTime", ascending: false)
+    return realm.objects(Note.self).sorted(byProperty: "modificationTime", ascending: false)
   }
   
 }
